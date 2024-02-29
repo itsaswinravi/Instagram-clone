@@ -206,6 +206,7 @@
         width: 35%;
         margin-top: 15px;
         position: fixed;
+        right: 35px;
     }  
     .right-side .profile-title{
         display: flex;
@@ -222,4 +223,66 @@
     }
     .right-side .profile-title .profile-left .details .name{
         padding-bottom: 3px  ;
+    }
+    .suggesstions{
+        display: flex;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    .suggesstion p{
+        margin-right: 90px;
+
+    }
+    .suggesstions p :last-child{
+        margin-right: 0px;
+    }
+    .suggestion-title{
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .suggestion-title .suggestion-left{
+        display: flex;
+        align-items: center;
+        margin-right: 60px;
+    }
+    .suggestion-title .suggestion-left .image img{
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+    .suggestion-title .suggestion-left .details .name{
+        padding-bottom: 3px;
+    }
+
+    /*media Queries*/
+    
+
+    @media (max-width:992px){
+        header{
+            padding:10px 20px ;
+        }
+        section .left-side{
+            width: 100%;
+        }
+        
+        section .right-side{
+            display: none;
+
+        }
+    }
+    @media(max-width:768px){
+        header .search-box{
+            display: none;
+        }
+        section {
+            padding: 30px 20px;
+        }
+    }
+    @media(max-width:576px){
+        .story.stories{
+            width: 25%;
+        }
+        header nav ul li{
+            margin-right: 20px;
+        }
     }
